@@ -182,7 +182,7 @@ Model
 | Lasso | ~0.1270 |
 | ElasticNet | ~0.1270 |
 
-![Ridge residuals](outputs/ridge_residuals.png)
+![Ridge residuals](output/ridge_residuals.png)
 
 Графики остатков показали характерную для линейных моделей проблему — систематическое занижение цен на дорогих домах (правый хвост), что ожидаемо при нелинейной природе данных.
 
@@ -196,7 +196,7 @@ Model
 | XGBoost | ~0.1387 |
 | CatBoost | **0.1176** |
 
-![CatBoost residuals](outputs/catboost_residuals.png)
+![CatBoost residuals](output/catboost_residuals.png)
 
 CatBoost показал наилучший результат без каких-либо изменений гиперпараметров. Визуальный анализ остатков показал, что все три модели совершают похожие ошибки — это важный сигнал для стекинга (высокая корреляция ошибок снижает эффект ансамбля).
 
